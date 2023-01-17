@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Horizontal Layouts | Skote - Angular Admin & Dashboard Template | Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Skote Premium Multipurpose Admin & Dashboard Template
+        documentation of Angular" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <meta name="keywords" content="Skote admin documentation, Skote Angular
+        documentation">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-topbar="dark" data-spy="scroll" data-target=".right-side-nav" data-offset="175">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-light">
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-light.svg" alt="" height="25">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="20"> <span
+                                        class="badge badge-soft-success ml-2">Angular 15</span>
+                                </span>
+                            </a>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24
+                        header-item waves-effect d-lg-none" id="vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                </div>
+                <div class="d-flex">
+                    <div class="d-inline-block">
+                        <a href="https://themeforest.net/item/skote-angular-9-admin-dashboard-template/25911071/support"
+                            target="_blank" class="header-item">Support</a>
+                    </div>
+                    <div class="d-none d-md-inline-block">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiP9bDHzIQdQoMXFrYvJx00wyFzSu_cqBWP0N0uUHpqjrbzQ/viewform"
+                            target="_blank" class="header-item">Need Customization?</a>
+                    </div>
+                    <div class="d-inline-block">
+                        <a href="https://1.envato.market/skoteangular" target="_blank" class="header-item">Buy Now</a>
+                    </div>
+
+                    <div class="d-inline-block">
+                        <h5 class="header-item m-0"><span class="badge badge-danger">v4.1.0</span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Docs</li>
+
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="mdi mdi-text-box-outline"></i>
+                                <span>Introduction</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="setup.html" class="waves-effect">
+                                <i class="mdi mdi-cog-outline"></i>
+                                <span>Setup</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Layouts</li>
+
+                        <li>
+                            <a href="vertical.html" class="waves-effect">
+                                <i class="mdi mdi-flip-horizontal"></i>
+                                <span>Vertical</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="horizontal.html" class="waves-effect">
+                                <i class="mdi mdi-flip-vertical"></i>
+                                <span>Horizontal</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Themes</li>
+
+                        <li>
+                            <a href="light.html" class="waves-effect">
+                                <i class="mdi mdi-white-balance-sunny"></i>
+                                <span>Light Version</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="dark.html" class="waves-effect">
+                                <i class="mdi mdi-weather-night"></i>
+                                <span>Dark Version</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="rtl.html" class="waves-effect">
+                                <i class="mdi mdi-web"></i>
+                                <span>RTL Version</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Other</li>
+
+                        <li>
+                            <a href="plugins.html" class="waves-effect">
+                                <i class="mdi mdi-package-variant-closed"></i>
+                                <span>Plugins</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="changelog.html" class="waves-effect">
+                                <i class="mdi mdi-format-list-bulleted"></i>
+                                <span>Changelog</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex
+                                    align-items-center justify-content-between">
+                                <h3 class="mb-0 font-size-24">Plugins</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+
+                                        <div class="d-xl-flex">
+
+                                            <div class="w-100">
+
+                                                <p class="text-muted">Here
+                                                    is the list of Plugins
+                                                    (with a link to the
+                                                    official
+                                                    documentation) which
+                                                    helped us to make admin
+                                                    better.</p>
+
+                                                <div class="table-responsive">
+                                                    <table class="table
+                                                            mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Plugins</th>
+                                                                <th>Url</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>@agm/core</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@agm/core"
+                                                                        target="_blank">"@agm/core"
+                                                                        :
+                                                                        "^1.1.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/animations</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/animations"
+                                                                        target="_blank">"@angular/animations"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/common</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/common"
+                                                                        target="_blank">"@angular/common"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/compiler</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/compiler"
+                                                                        target="_blank">"@angular/compiler"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/core</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/core"
+                                                                        target="_blank">"@angular/core"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/forms</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/forms"
+                                                                        target="_blank">"@angular/forms"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/localize</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/localize"
+                                                                        target="_blank">"@angular/localize"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/platform-browser</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/platform-browser"
+                                                                        target="_blank">"@angular/platform-browser"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/platform-browser-dynamic</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/platform-browser-dynamic"
+                                                                        target="_blank">"@angular/platform-browser-dynamic"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@angular/router</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@angular/router"
+                                                                        target="_blank">"@angular/router"
+                                                                        :
+                                                                        "^15.0.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@asymmetrik/ngx-leaflet</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@asymmetrik/ngx-leaflet"
+                                                                        target="_blank">"@asymmetrik/ngx-leaflet"
+                                                                        :
+                                                                        "^15.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@ckeditor/ckeditor5-angular</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@ckeditor/ckeditor5-angular"
+                                                                        target="_blank">"@ckeditor/ckeditor5-angular"
+                                                                        :
+                                                                        "^4.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@ckeditor/ckeditor5-build-classic</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic"
+                                                                        target="_blank">"@ckeditor/ckeditor5-build-classic"
+                                                                        :
+                                                                        "^35.4.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@ctrl/ngx-emoji-mart</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@ctrl/ngx-emoji-mart"
+                                                                        target="_blank">"@ctrl/ngx-emoji-mart"
+                                                                        :
+                                                                        "^7.1.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@fullcalendar/angular</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@fullcalendar/angular"
+                                                                        target="_blank">"@fullcalendar/angular"
+                                                                        :
+                                                                        "^6.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@fullcalendar/core</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@fullcalendar/core"
+                                                                        target="_blank">"@fullcalendar/core"
+                                                                        :
+                                                                        "^6.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@fullcalendar/daygrid</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@fullcalendar/daygrid"
+                                                                        target="_blank">"@fullcalendar/daygrid"
+                                                                        :
+                                                                        "^6.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@fullcalendar/interaction</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@fullcalendar/interaction"
+                                                                        target="_blank">"@fullcalendar/interaction"
+                                                                        :
+                                                                        "^6.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@fullcalendar/list</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@fullcalendar/list"
+                                                                        target="_blank">"@fullcalendar/list"
+                                                                        :
+                                                                        "^6.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@fullcalendar/timegrid</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@fullcalendar/timegrid"
+                                                                        target="_blank">"@fullcalendar/timegrid"
+                                                                        :
+                                                                        "^6.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@ng-bootstrap/ng-bootstrap</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap"
+                                                                        target="_blank">"@ng-bootstrap/ng-bootstrap"
+                                                                        :
+                                                                        "^14.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@ng-select/ng-select</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@ng-select/ng-select"
+                                                                        target="_blank">"@ng-select/ng-select"
+                                                                        :
+                                                                        "^10.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@ngx-translate/core</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@ngx-translate/core"
+                                                                        target="_blank">"@ngx-translate/core"
+                                                                        :
+                                                                        "^14.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@ngx-translate/http-loader</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@ngx-translate/http-loader"
+                                                                        target="_blank">"@ngx-translate/http-loader"
+                                                                        :
+                                                                        "^7.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>@nicky-lenaers/ngx-scroll-to</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/@nicky-lenaers/ngx-scroll-to"
+                                                                        target="_blank">"@nicky-lenaers/ngx-scroll-to"
+                                                                        :
+                                                                        "^14.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>angular-archwizard</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/angular-archwizard"
+                                                                        target="_blank">"angular-archwizard"
+                                                                        :
+                                                                        "^7.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>angularx-flatpickr</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/angularx-flatpickr"
+                                                                        target="_blank">"angularx-flatpickr"
+                                                                        :
+                                                                        "^7.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>apexcharts</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/apexcharts"
+                                                                        target="_blank">"apexcharts"
+                                                                        :
+                                                                        "^3.36.3"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>bootstrap</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/bootstrap"
+                                                                        target="_blank">"bootstrap"
+                                                                        :
+                                                                        "^5.2.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>chart.js</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/chart.js"
+                                                                        target="_blank">"chart.js"
+                                                                        :
+                                                                        "^2.9.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>chartist</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/chartist"
+                                                                        target="_blank">"chartist"
+                                                                        :
+                                                                        "^0.11.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>echarts</td>
+                                                                <td>
+                                                                    <a href="https://echarts.apache.org/en/index.html"
+                                                                        target="_blank">"echarts"
+                                                                        :
+                                                                        "^5.4.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>firebase</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/firebase"
+                                                                        target="_blank">"firebase"
+                                                                        :
+                                                                        "^9.15.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>flatpickr</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/flatpickr"
+                                                                        target="_blank">"flatpickr"
+                                                                        :
+                                                                        "^4.6.13"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>leaflet</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/leaflet"
+                                                                        target="_blank">"leaflet"
+                                                                        :
+                                                                        "^1.9.3"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>masonry-layout</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/masonry-layout"
+                                                                        target="_blank">"masonry-layout"
+                                                                        :
+                                                                        "^4.2.2"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>metismenujs</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/metismenujs"
+                                                                        target="_blank">"metismenujs"
+                                                                        :
+                                                                        "^1.3.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng-apexcharts</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng-apexcharts"
+                                                                        target="_blank">"ng-apexcharts"
+                                                                        :
+                                                                        "^1.7.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng-chartist</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng-chartist"
+                                                                        target="_blank">"ng-chartist"
+                                                                        :
+                                                                        "^7.1.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng-otp-input</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng-otp-input"
+                                                                        target="_blank">"ng-otp-input"
+                                                                        :
+                                                                        "^1.8.5"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng2-charts</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng2-charts"
+                                                                        target="_blank">"ng2-charts"
+                                                                        :
+                                                                        "^2.4.2"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng2-completer</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng2-completer"
+                                                                        target="_blank">"ng2-completer"
+                                                                        :
+                                                                        "^9.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng2-search-filter</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng2-search-filter"
+                                                                        target="_blank">"ng2-search-filter"
+                                                                        :
+                                                                        "^0.5.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng2-smart-table</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng2-smart-table"
+                                                                        target="_blank">"ng2-smart-table"
+                                                                        :
+                                                                        "^1.7.2"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ng5-slider</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ng5-slider"
+                                                                        target="_blank">"ng5-slider"
+                                                                        :
+                                                                        "^1.2.6"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-chartist</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-chartist"
+                                                                        target="_blank">"ngx-chartist"
+                                                                        :
+                                                                        "^1.0.3"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-color-picker</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-color-picker"
+                                                                        target="_blank">"ngx-color-picker"
+                                                                        :
+                                                                        "^13.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-cookie-service</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-cookie-service"
+                                                                        target="_blank">"ngx-cookie-service"
+                                                                        :
+                                                                        "^15.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-drag-drop</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-drag-drop"
+                                                                        target="_blank">"ngx-drag-drop"
+                                                                        :
+                                                                        "^15.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-dropzone</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-dropzone"
+                                                                        target="_blank">"ngx-dropzone"
+                                                                        :
+                                                                        "^3.1.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-dropzone-wrapper</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-dropzone-wrapper"
+                                                                        target="_blank">"ngx-dropzone-wrapper"
+                                                                        :
+                                                                        "^13.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-echarts</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-echarts"
+                                                                        target="_blank">"ngx-echarts"
+                                                                        :
+                                                                        "^15.0.1"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-image-cropper</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-image-cropper"
+                                                                        target="_blank">"ngx-image-cropper"
+                                                                        :
+                                                                        "^6.3.2"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-lightbox</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-lightbox"
+                                                                        target="_blank">ngx-lightbox"
+                                                                        :
+                                                                        "^3.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-mask</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-mask"
+                                                                        target="_blank">ngx-mask"
+                                                                        :
+                                                                        "^14.2.4"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-owl-carousel-o</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-owl-carousel-o"
+                                                                        target="_blank">"ngx-owl-carousel-o"
+                                                                        :
+                                                                        "^15.0.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-ui-switch</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-ui-switch"
+                                                                        target="_blank">"ngx-ui-switch"
+                                                                        :
+                                                                        "^14.0.3"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ngx-youtube-player</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/ngx-youtube-player"
+                                                                        target="_blank">"ngx-youtube-player"
+                                                                        :
+                                                                        "^12.0.2"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>rxjs</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/rxjs"
+                                                                        target="_blank">"rxjs"
+                                                                        :
+                                                                        "^7.8.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>sass-loader</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/sass-loader"
+                                                                        target="_blank">"sass-loader"
+                                                                        :
+                                                                        "^13.2.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>simplebar-angular</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/simplebar-angular"
+                                                                        target="_blank">"simplebar-angular"
+                                                                        :
+                                                                        "^2.5.0"</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>sweetalert2</td>
+                                                                <td>
+                                                                    <a href="https://www.npmjs.com/package/sweetalert2"
+                                                                        target="_blank">"sweetalert2"
+                                                                        :
+                                                                        "^11.6.16"</a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Themesbrand.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-right d-none d-sm-block">
+                                Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://themesbrand.com/" target="_blank" class="text-muted">Themesbrand</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/jquery.easing/jquery.easing.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<div class="container-fluid">
+    <app-page-title title="Toasts" [breadcrumbItems]="breadCrumbItems"></app-page-title>
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Live Example</h5>
+                    <p class="card-title-des">Click the button below to show a toast (positioned with our
+                        utilities in the
+                        lower right corner) that has been hidden by default.</p>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <div>
+                            <button type="button" class="btn btn-primary" id="liveToastBtn" (click)="show1 = true">Show live toast</button>
+                            <div class="position-fixed top-0 end-0 p-3" style="z-index: 1005">
+                                <ngb-toast *ngIf="show1"
+                                [delay]="5000"
+                                [autohide]="autohide"
+                                (mouseenter)="autohide = false"
+                                (mouseleave)="autohide = true"
+                                (hide)="show = false; autohide = true"
+                                [class.bg-warning]="!autohide">
+                                    <ng-template ngbToastHeader>
+                                        <img src="assets/images/logo.svg" alt="" class="me-2" height="18">
+                                            <strong class="me-auto">Bootstrap</strong>
+                                            <small>11 mins ago</small>
+                                    </ng-template>
+                                    Hello, world! This is a toast message.
+                                </ngb-toast>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end col -->
+
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h5 class="card-title">Basic Toast</h5>
+                    <p class="card-title-desc">Toasts are as flexible as you need and have very little
+                        required markup.
+                        At a minimum, we require a single element to contain your
+                        “toasted” content and strongly encourage a dismiss button.</p>
+                    <div style="min-height: 110px;">
+                        <ngb-toast *ngIf="show" [autohide]="false" (hidden)="show=false">
+                            <ng-template ngbToastHeader>
+                                <img src="assets/images/logo.svg" alt="" class="me-2" height="18">
+                                <span class="fw-bold me-auto">Skote</span>
+                                <small class="text-muted">11 mins ago</small>
+                            </ng-template>
+                            Hello, world! This is a toast message.
+                        </ngb-toast>
+                    </div>
+                    <!--end toast-->
+                </div>
+            </div>
+        </div>
+        <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h5 class="card-title">Translucent</h5>
+                    <p class="card-title-desc">Toasts are slightly translucent, too, so they blend over
+                        whatever they might appear over. For browsers that
+                        support the <code>backdrop-filter</code> CSS property,
+                        we’ll also attempt to blur the elements under a toast.</p>
+
+                    <div style="min-height: 110px;">
+                        <ngb-toast *ngIf="translucent" [autohide]="false" (hidden)="translucent=false">
+                            <ng-template ngbToastHeader>
+                                <img src="assets/images/logo.svg" alt="" class="me-2" height="18">
+                                <strong class="me-auto">Skote</strong>
+                                <small class="text-muted">11 mins ago</small>
+                            </ng-template>
+                            Hello, world! This is a toast message.
+                        </ngb-toast>
+                        <!--end toast-->
+                    </div>
+                    <!--end /div-->
+
+                </div>
+            </div>
+        </div>
+        <!-- end col -->
+
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h5 class="card-title">Stacking</h5>
+                    <p class="card-title-desc">For systems that generate more notifications, consider using
+                        a wrapping element
+                        so they can easily stack.</p>
+
+                    <div style="min-height: 230px;">
+                        <div aria-live="polite" aria-atomic="true" class="position-relative">
+                            <!-- Position it: -->
+                            <div class="toast-container position-absolute top-0 end-0 p-2 p-lg-3">
+
+                                <!-- Then put toasts within -->
+                                <ngb-toast *ngIf="stacking" [autohide]="false" (hidden)="stacking=false">
+                                    <ng-template ngbToastHeader>
+                                        <img src="assets/images/logo.svg" alt="" class="me-2" height="18">
+                                        <strong class="me-auto">Skote</strong>
+                                        <small class="text-muted">just now</small>
+                                    </ng-template>
+                                    See? Just like this.
+                                </ngb-toast>
+
+                                <ngb-toast *ngIf="stackingSec" [autohide]="false" (hidden)="stackingSec=false">
+                                    <ng-template ngbToastHeader>
+                                        <img src="assets/images/logo.svg" alt="" class="me-2" height="18">
+                                        <strong class="me-auto">Skote</strong>
+                                        <small class="text-muted">2 sec ago</small>
+                                    </ng-template>
+                                    Heads up, toasts will stack automatically
+                                </ngb-toast>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end /div-->
+                </div>
+            </div>
+        </div>
+        <!-- end col -->
+
+    </div>
+    <!-- end row -->
+
+</div>
